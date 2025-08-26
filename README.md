@@ -1,7 +1,15 @@
 # OllamaCord
-A Discord bot that allows you to chat with an Ollama model through the Discord interface.
+Standalone Discord chatbot using Ollama.
 
-Requirements
+Behavior:
+- Replies ONLY when the bot is @mentioned (ignores prefixed commands).
+- Reply is prefixed by mentioning the user who invoked the bot: @SomeUser <AI reply>
+- /reset: reset conversation context (public response)
+- /toggle [enable]: enable/disable/toggle chatbot (public response)
+- Slash commands are registered GLOBALLY (not guild-specific). Note: global command
+  propagation can take up to ~1 hour after the first sync (Discord limitation).
+
+Prerequisites:
 
 Python 3.10+ recommended.
 
