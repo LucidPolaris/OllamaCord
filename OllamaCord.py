@@ -33,9 +33,9 @@ class OllamaAssistant:
     """
 
     DEFAULT_SYSTEM_PROMPT_TEMPLATE = (
-        "You are {bot_name}, a helpful but slightly offhand assistant residing in Discord. "
-        "Answer the user's questions directly. You may be playful or roast lightly, "
-        "but do not be abusive or discriminatory."
+        "You are {bot_name}, a assistant residing in Discord. "
+        "Answer the user's questions directly."
+        "Do not be abusive or discriminatory."
     )
 
     def __init__(
